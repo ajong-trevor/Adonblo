@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../widgets/custom_bottom.dart';
 import '../utils/app_colors.dart';
@@ -205,7 +206,7 @@ class WelcomeScreen extends StatelessWidget {
               right: 20.0,
             ),
             child: CustomButton(
-              pressed: () {},
+              pressed: () => Get.toNamed('/login'),
               text: 'Log in',
               color: AppColors.primaryColor,
             ),
@@ -213,7 +214,7 @@ class WelcomeScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: CustomButton(
-              pressed: () {},
+              pressed: () => Get.toNamed('/signup'),
               text: 'Sign up',
               color: AppColors.grayColor,
             ),
